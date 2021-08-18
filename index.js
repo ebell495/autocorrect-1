@@ -1,4 +1,4 @@
-const autocorrect = import('../pkg/autocorrect');
+const autocorrect = import('@huacnlee/autocorrect');
 
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('input');

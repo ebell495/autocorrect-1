@@ -1,4 +1,0 @@
-this-file-will-ignore.rs
-tests/fixtures/*.expect.*
-src/**/*.rs
-README.md
