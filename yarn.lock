@@ -8,9 +8,9 @@
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
 "@huacnlee/autocorrect@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@huacnlee/autocorrect/-/autocorrect-1.4.0.tgz#6cec69022dbc35fc8fbbabde0ee9426ff0cafba4"
-  integrity sha512-QD7MUvUsSExZ0T/CDj1c4qxXsTriMeLHj3aKS2nSSXjbQ1cJXl+c7qVUoI9Gcs2UXbGk3DUVyTkG9zNLFxqufw==
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@huacnlee/autocorrect/-/autocorrect-1.4.1.tgz#bd91f658a9f32702943bd8b8c715b86116d13796"
+  integrity sha512-sbIAy33leeVmkopo5tuVPBKUoREpQxnNpp1gmTRtT7Qv+uJot8cIsmjnfWJJqs4unDlzst+nF0nqROql+OfrRQ==
 
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"
