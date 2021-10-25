@@ -305,6 +305,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _exa
 /******/ 		function promiseResolve() { return Promise.resolve(); }
 /******/ 		
 /******/ 		var wasmImportedFuncCache0;
+/******/ 		var wasmImportedFuncCache1;
 /******/ 		var wasmImportObjects = {
 /******/ 			"./node_modules/@huacnlee/autocorrect/autocorrect_bg.wasm": function() {
 /******/ 				return {
@@ -312,6 +313,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _exa
 /******/ 						"__wbindgen_json_parse": function(p0i32,p1i32) {
 /******/ 							if(wasmImportedFuncCache0 === undefined) wasmImportedFuncCache0 = __webpack_require__.c["./node_modules/@huacnlee/autocorrect/autocorrect_bg.js"].exports;
 /******/ 							return wasmImportedFuncCache0["__wbindgen_json_parse"](p0i32,p1i32);
+/******/ 						},
+/******/ 						"__wbindgen_throw": function(p0i32,p1i32) {
+/******/ 							if(wasmImportedFuncCache1 === undefined) wasmImportedFuncCache1 = __webpack_require__.c["./node_modules/@huacnlee/autocorrect/autocorrect_bg.js"].exports;
+/******/ 							return wasmImportedFuncCache1["__wbindgen_throw"](p0i32,p1i32);
 /******/ 						}
 /******/ 					}
 /******/ 				};
@@ -340,7 +345,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _exa
 /******/ 					promises.push(installedWasmModuleData);
 /******/ 				else {
 /******/ 					var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 					var req = fetch(__webpack_require__.p + "" + {"node_modules_huacnlee_autocorrect_autocorrect_js":{"./node_modules/@huacnlee/autocorrect/autocorrect_bg.wasm":"3f263bd7387e632bd6a3"}}[chunkId][wasmModuleId] + ".module.wasm");
+/******/ 					var req = fetch(__webpack_require__.p + "" + {"node_modules_huacnlee_autocorrect_autocorrect_js":{"./node_modules/@huacnlee/autocorrect/autocorrect_bg.wasm":"f61b1c3c64664bddffca"}}[chunkId][wasmModuleId] + ".module.wasm");
 /******/ 					var promise;
 /******/ 					if(importObject && typeof importObject.then === 'function' && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 						promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
