@@ -1,3 +1,5 @@
+import './style.css';
+
 const autocorrectLib = import('@huacnlee/autocorrect');
 import examples from './examples';
 
