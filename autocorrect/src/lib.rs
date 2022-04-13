@@ -87,6 +87,7 @@ mod code;
 mod fullwidth;
 mod halfwidth;
 pub mod ignorer;
+mod parser;
 mod strategery;
 use code::Results;
 pub use code::{format_for, get_file_extension, is_support_type, lint_for};
@@ -110,7 +111,7 @@ lazy_static! {
     static ref SPACE_RE: Regex = regexp!("{}", r"[ ]");
     static ref DASH_HANS_RE: Regex = regexp!("{}", r"([\p{CJK}）】」》”’])([\-]+)([\p{CJK}}}（【「《“‘])");
     // （）【】「」《》
-    static ref LEFT_QUOTE_RE: Regex = regexp!("{}", r" ([（【「《])");
+    static ref LEFT_QUOTE_RE: Regex = regexp!("{}", r"([（【「《])");
     static ref RIGHT_QUOTE_RE: Regex = regexp!("{}", r"([）】」》]) ");
 
     // Strategies all rules
@@ -156,23 +157,25 @@ lazy_static! {
 /// ```
 #[wasm_bindgen]
 pub fn format(text: &str) -> String {
-    let mut out = String::from(text);
+    return parser::format(text);
 
-    // skip if not has CJK
-    if !CJK_RE.is_match(text) {
-        return out;
-    }
+    // let mut out = String::from(text);
 
-    out = fullwidth::fullwidth(&out);
-    out = halfwidth::halfwidth(&out);
+    // // skip if not has CJK
+    // if !CJK_RE.is_match(text) {
+    //     return out;
+    // }
 
-    for rule in STRATEGIES.iter() {
-        out = rule.format(&out)
-    }
+    // out = fullwidth::fullwidth(&out);
+    // out = halfwidth::halfwidth(&out);
 
-    out = space_dash_with_hans(&out);
+    // for rule in STRATEGIES.iter() {
+    //     out = rule.format(&out)
+    // }
 
-    out
+    // out = space_dash_with_hans(&out);
+
+    // out
 }
 
 /// Format a html content.
