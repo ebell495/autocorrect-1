@@ -28,10 +28,10 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.3.tgz#90420f9f9c6d3987f176a19a7d8e764271a2f55d"
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
-"@huacnlee/autocorrect@^1.4.0":
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/@huacnlee/autocorrect/-/autocorrect-1.5.0.tgz#d2cb39924bd0eb6ca529d3529227990862d9a8ac"
-  integrity sha512-CRIAEq7zuzU0r8pM8TS3VFcE1dyTZgEkH/Mywkg6yKHLj+tYpTQ52KYh6/TNHVes1K3fZ8BugT11yB1NNDMtzQ==
+"@huacnlee/autocorrect@^1.5.13":
+  version "1.5.13"
+  resolved "https://registry.npmjs.org/@huacnlee/autocorrect/-/autocorrect-1.5.13.tgz#fd53729380ff3f78664b71322627fc03728dc045"
+  integrity sha512-dGPWLKAJXsVn+HUPKPsnRHdbZOed4ZYdNb7sZO9FjHad36YyjhYios9AbcuejFuaUgjmC0GXt23OOEAvhEogNQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

@@ -19,6 +19,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@huacnlee/autocorrect": "^1.4.0"
+    "@huacnlee/autocorrect": "^1.5.13"
   }
 }
