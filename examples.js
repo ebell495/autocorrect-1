@@ -417,4 +417,41 @@ region:
 
 你可以加312元，换成无线充电盒款,也可以加753元，换成AirPods Pro?`,
   },
+  po: {
+    title: 'Gettext (.po, .pot)',
+    raw: `msgid "这是msgid"
+msgstr "这是msgid"
+
+"Project-Id-Version: Admin"
+
+#: ref:620e039d1a4c6d48680001bd
+msgid "请输入Email地址:"
+msgstr "请输入Email地址:"
+msgstr[0] "这是msgstr0"
+msgstr[1] "这是msgstr1"
+
+# 这是Commit评论.
+msgctxt "Foo"
+msgid_plural "密码长度要求最少6个字符."
+msgstr "密码长度要求最少6个字符."`,
+  },
+  toml: {
+    title: 'TOML config',
+    raw: `# 這是一份TOML文件
+title = "TOML範例"
+
+[owner]
+name = "Tom Preston-Werner"
+dob = 1979-05-27T07:32:00-08:00 # First class dates`,
+  },
+  conf: {
+    title: 'Nginx Conf (.conf)',
+    raw: `user www;
+worker_processes auto;
+# 这是Nginx配置
+
+server {
+  # 这是Nginx配置Server部分
+}`,
+  },
 };
