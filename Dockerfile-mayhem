@@ -1,0 +1,7 @@
+FROM rust:latest as builder
+COPY . /autocorrect
+WORKDIR /autocorrect
+RUN cargo build
+
+FROM debian:bullseye-slim
+COPY --from=builder /autocorrect/target/debug/autocorrect .

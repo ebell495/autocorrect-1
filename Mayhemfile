@@ -1,0 +1,7 @@
+project: autocorrect-rust
+target: autocorrect
+
+tests: null
+
+cmds:
+    - cmd: ./autocorrect @@
