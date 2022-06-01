@@ -4,4 +4,4 @@ target: autocorrect
 tests: null
 
 cmds:
-    - cmd: ./autocorrect @@
+    - cmd: ./autocorrect --lint @@
